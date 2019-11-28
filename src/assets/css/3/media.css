@@ -1,0 +1,182 @@
+/*清浮动*/
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+/*顶部动画*/
+@keyframes feadInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*480查询*/
+@media (max-width: 480px){
+  #wallet-wrapper .header-title {
+    font-size: 48px;
+  }
+  .wallet-wrapper .header-text{
+    box-sizing: border-box;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px){
+  #wallet-wrapper .our-advantages-list .list-item:nth-child(3){
+    margin-top: 20px !important;
+  }
+  /*3个一排改*/
+  #wallet-wrapper .our-advantages-list{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+  }
+  #wallet-wrapper .our-advantages-list .list-item{
+    margin-bottom: 20px;
+  }
+  #wallet-wrapper .our-advantages-list .list-item:last-child{
+    margin-bottom: 0;
+  }
+  #rrayrobot-wrapper .our-advantages-list-wrapper .our-advantages-list,.intelligent-wrapper .our-advantages-list-wrapper .our-advantages-list,#wallet-wrapper .our-advantages-list-wrapper .our-advantages-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #rrayrobot-wrapper .our-advantages-list .list-item{
+    margin-bottom: 40px !important;
+  }
+  #rrayrobot-wrapper .our-advantages-list .list-item:last-child{
+    margin-bottom: 0 !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .title-wrapper{
+    padding: 0 15px;
+  }
+  #wallet-wrapper  .our-advantages-list{
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 714px){
+  #wallet-wrapper .our-advantages .our-advantages-list .list-item:nth-child(2){
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #wallet-wrapper .container {
+    width: 1170px;
+  }
+  #wallet-wrapper  .our-advantages-list{
+    display: flex;
+  }
+  #wallet-wrapper  .our-advantages-list .list-item{
+    margin-bottom: 20px;
+  }
+  #wallet-wrapper  .our-advantages-list .list-item:last-child{
+    margin-bottom: 0;
+  }
+  .intelligent-wrapper  .our-advantages-list .list-item{
+    margin-bottom: 0 !important;
+  }
+}
+/*992查询*/
+@media (max-width: 992px) {
+  #wallet-wrapper.container {
+    width: 970px;
+  }
+}
+/*768查询*/
+@media (max-width: 768px) {
+  #wallet-wrapper .container {
+    /*width: 750px;*/
+  }
+}
+/*更多功能列表*/
+@media only screen and (max-width: 1217px) {
+  #wallet-wrapper .morefunction ul{
+    margin: 0 auto !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #wallet-wrapper .morefunction ul .more-list{
+    margin: 0;
+  }
+  #wallet-wrapper .morefunction ul .more-list:first-child{
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 548px) {
+  #wallet-wrapper .morefunction ul{
+    margin: 0 auto !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  #wallet-wrapper .morefunction ul .more-list{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    margin: 0;
+    padding-bottom: 45px;
+  }
+  #wallet-wrapper .morefunction ul .more-list:first-child{
+    margin-bottom: 20px;
+  }
+  #wallet-wrapper .morefunction .more-list{
+    padding: 58px 20px 0;
+  }
+}
+/*我们的优势*/
+@media only screen and (max-width: 750px) {
+  #wallet-wrapper .our-advantages-list-wrapper .our-advantages-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+/*智能训练师系统小*/
+@media only screen and (max-width: 400px) {
+  .intelligent-wrapper .our-advantages-list .our-advantages-list{
+    /*width: 100%;*/
+    /*padding: 0 15px;*/
+  }
+  .intelligent-wrapper .our-advantages-list .list-item{
+    width: 100% !important;
+    height: auto !important;
+    min-height: 340px;
+    padding: 58px 15px 0 !important;
+  }
+}
+@media (max-width: 780px) {
+  .intelligent-wrapper .title-wrapper .header-title{
+    font-size: 40px !important;
+  }
+  .intelligent-wrapper .title-wrapper .header-text{
+    font-size: 20px !important;
+  }
+}
+/*375屏幕 头部*/
+@media (max-width: 375px) {
+  .intelligent-wrapper .title-wrapper .header-title{
+    font-size: 30px !important;
+  }
+  .intelligent-wrapper .title-wrapper .header-text{
+    font-size: 18px !important;
+  }
+}

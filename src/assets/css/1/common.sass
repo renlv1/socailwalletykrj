@@ -1,0 +1,1285 @@
+@keyframes feadInUp
+  0%
+    opacity: 0
+    transform: translateY(20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes feadInUp2
+  0%
+    opacity: 0
+    transform: translateY(100px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+.header-wrapper
+  transition: cubic-bezier(0.125, 0.75, 0.415, 1) all 0.5s 0s
+  width: 100%
+  height: 66px
+  background-color: rgba(225, 225, 225, 0)
+  color: #ffffff
+  font-size: 15px
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1000
+  .header-bg
+    width: 100%
+    max-width: 1200px
+    height: 100%
+    margin: auto
+    .header-left
+      float: left
+      height: 100%
+      display: flex
+      align-items: center
+      .logo-bg
+        width: 237px
+        height: 35px
+        background-image: url("../../images/logo.svg")
+        background-repeat: no-repeat
+        background-size: auto
+    .header-right
+      float: right
+      height: 100%
+      .router-bg
+        height: 100%
+        display: flex
+        align-items: center
+        .router-lists
+          height: 100%
+          display: flex
+          align-items: center
+          li
+            display: flex
+            align-items: center
+            //margin-right: 54px
+            margin-right: 15px
+            height: 100%
+            position: relative
+            cursor: pointer
+            padding: 0 20px
+            a
+              width: auto
+              height: 100%
+              display: flex
+              align-items: center
+            .gradual-change
+              margin-left: 5px
+            dl
+              display: none
+              position: absolute
+              left: 0
+              top: 66px
+              background-color: rgba(255,255,255, 0.9)
+              dt
+                text-align: left
+                a
+                  padding: 15px 20px
+                  min-width: 150px
+                  display: inline-block
+                  color: #666
+                &:hover
+                  background: rgba(255,255,255,1)
+                  a
+                    color: #27a2db
+            &:hover
+              background-color: rgba(255,255,255,0.9)
+              color: #27a2db
+              &>a
+                color: #27a2db
+            .activeNav
+              display: block
+          .last-nav
+            height: 30px
+            border: 1px solid #fff
+            border-radius: 4px
+            margin-right: 0!important
+        .btn-bar
+          display: none
+          margin-left: 50px
+          cursor: pointer
+          color: #346aa9
+
+.activeNavs
+  transition: cubic-bezier(0.125, 0.75, 0.415, 1) all 0.5s 0s
+  background-color: #ffffff
+  color: #666
+  border-bottom: 1px solid #27a2db
+  .header-bg
+    .header-left
+      .logo-bg
+        width: 237px
+        height: 35px
+        background-image: url("../../images/logo2.svg")
+        background-size: auto
+    .header-right
+      .router-bg
+        .router-lists
+          li
+            a
+              color: #666
+          .last-nav
+            border: 1px solid #27a2db
+            background-color: #27a2db
+            a
+              color: #ffffff
+            &:hover
+              border: 1px solid #43bded
+              background-color: #43bded
+              a
+                color: #ffffff
+@media screen and (max-width: 1024px)
+  .header-wrapper
+    background-color: #ffffff!important
+    border-bottom: 1px solid #27a2db
+    .header-bg
+      padding: 0 15px!important
+      box-sizing: border-box
+      background-color: #ffffff!important
+      color: #666
+      .logo-bg
+        width: 197px!important
+        height: 30px!important
+        background-image: url("../../images/logo2.svg")!important
+        background-size: auto
+      .router-bg
+        .router-lists
+          position: absolute
+          top: 66px
+          left: 0
+          width: 100%
+          display: none!important
+          height: auto!important
+          border-bottom: 1px solid #27a2db
+          li
+            background-color: #ffffff
+            width: 100%
+            padding: 0 15px
+            box-sizing: border-box
+            position: static!important
+            display: block!important
+            height: auto!important
+            dl
+              position: static!important
+              display: block!important
+              background: none!important
+              a
+                padding: 0!important
+                width: 100%!important
+                display: flex!important
+                align-items: center!important
+                padding-left: 15px!important
+            a
+              height: 45px!important
+              color: #666666
+            &:hover
+              background-color: #ffffff!important
+          .last-nav
+            border: none!important
+            border-radius: 0!important
+            background-color: #ffffff!important
+            a
+              color: #666!important
+            &:hover
+              background-color: #ffffff!important
+              a
+                color: #27a2db!important
+                background-color: #ffffff!important
+        .btn-bar
+          display: inline-block!important
+        .activeNav
+          display: block!important
+
+.footer-wrapper
+  width: 100%
+  min-height: 340px
+  //background-color: #3f3e41
+  background: url("../../images/foot_bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  color: #ffffff
+  padding-top: 60px
+  padding-bottom: 60px
+  padding-left: 15px
+  padding-right: 15px
+  box-sizing: border-box
+  .content-bg
+    width: 100%
+    max-width: 1200px
+    margin: auto
+    //height: 100%
+    display: flex
+    justify-content: space-between
+    &>ul
+      width: 200px
+      li
+        width: 100%
+        font-size: 18px
+        a
+          font-size: 14px
+          color: #999999
+          &:hover
+            color: #ffffff
+      .first-title
+        border-bottom: 1px solid #999999
+        padding-bottom: 20px
+        margin-bottom: 20px
+  .content-bg1
+    width: 100%
+    max-width: 1200px
+    margin: 60px auto 0
+    font-size: 14px
+    color: #999999
+    .language-wrapper
+      margin-top: 34px
+      span
+        margin-right: 40px
+        cursor: pointer
+        &:hover
+          color: #ffffff
+
+@media screen and (max-width: 768px)
+  .footer-wrapper
+    background: url("../../images/downbg@2x.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      display: block
+      &>ul
+        width: 100%
+        margin-bottom: 40px
+
+.index-wrapper
+  width: 100%
+  height: 100%
+  .content1-wrapper
+    width: 100%
+    height: 500px
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #ffffff
+    background: url("../../images/1/index/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      height: 100%
+      display: flex
+      align-items: center
+      color: #ffffff
+      .blue-btn
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+  .content2-wrapper
+    width: 100%
+    background-color: #ffffff
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      display: flex
+      align-items: center
+      color: #808080
+      &>div
+        width: 50%
+        min-height: 540px
+      .content-info1
+        padding-right: 40px
+      .content-info2
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          margin-top: 30px
+          margin-bottom: 60px
+  .content3-wrapper
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #e6eaee
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #ccc
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      display: flex
+      align-items: center
+      color: #808080
+      &>div
+        width: 50%
+        min-height: 660px
+      .content-info1
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          margin-top: 50px
+      .content-info2
+        padding-left: 40px
+        .dominant-position
+          margin-top: 62px
+          display: flex
+          &>div
+            margin-right: 50px
+            .infoImg
+              width: 62px
+              height: 80px
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center
+  .content4-wrapper
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 40px
+    box-sizing: border-box
+    background-color: #ffffff
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      display: flex
+      align-items: center
+      color: #808080
+      &>div
+        width: 50%
+        min-height: 540px
+      .content-info1
+        padding-right: 40px
+      .content-info2
+        display: flex
+        align-items: center
+        justify-content: center
+  .content7-wrapper
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 58px
+    box-sizing: border-box
+    background-color: #e6eaee
+    border-top: 1px solid #27a2d4
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      color: #808080
+      text-align: center
+      .content-info
+        .transverseLine
+          display: inline-block
+          width: 100px
+          height: 1px
+          background-color: #ccc
+        img
+          width: auto
+
+  .content5-wrapper
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    //height: 500px
+    background-color: #ffffff
+    border-top: 1px solid #ccc
+    border-bottom: 1px solid #27a2d4
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      text-align: center
+      color: #808080
+      .transverseLine
+        display: inline-block
+        width: 100px
+        height: 1px
+        background-color: #ccc
+    .content-bg1
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      text-align: center
+      display: flex
+      justify-content: space-between
+      color: #808080
+      &>div
+        width: 380px
+        min-height: 280px
+        padding: 5px
+        //box-sizing: border-box
+        //box-shadow: 0 2px 6px #c2c2c2
+        //background-color: #ffffff
+        img
+          width: 102px
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      margin-top: 30px
+      margin-bottom: 125px
+      //height: 100%
+      text-align: center
+      display: flex
+      justify-content: space-between
+      color: #808080
+      &>div
+        width: 380px
+        min-height: 280px
+        padding: 5px
+        //box-shadow: 0 2px 6px #c2c2c2
+        //background-color: #ffffff
+        img
+          width: 102px
+  .content6-wrapper
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    //height: 500px
+    background-color: #e6eaee
+    padding-top: 125px
+    padding-bottom: 78px
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      //height: 100%
+      text-align: center
+      color: #808080
+      .transverseLine
+        display: inline-block
+        width: 100px
+        height: 1px
+        background-color: #ccc
+      .blue-btn
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+@media screen and (max-width: 768px)
+  .index-wrapper
+    .content1-wrapper
+      h1
+        font-size: 50px!important
+    .content2-wrapper
+      .content-bg
+        display: block!important
+        &>div
+          width: 100%
+          min-height: auto
+        .content-info1
+          padding-right: 0
+        .content-info2
+          display: flex
+          align-items: center
+          justify-content: center
+    .content3-wrapper
+      .content-bg
+        display: block!important
+        &>div
+          width: 100%
+          min-height: auto
+        .content-info2
+          padding-left: 0!important
+          .dominant-position
+            display: block!important
+            margin-bottom: 50px
+            &>div
+              margin-right: 0
+              text-align: center
+              margin-bottom: 30px
+              .infoImg
+                margin: auto
+    .content4-wrapper
+      .content-bg
+        display: block!important
+        &>div
+          width: 100%
+          min-height: auto
+        .content-info1
+          padding-right: 0
+          h1
+            text-align: center
+          p
+            text-align: center
+        .content-info2
+          img
+            margin-top: 57px
+            margin-bottom: 75px
+    .content7-wrapper
+      .content-bg2
+        .content-info
+          img
+            width: 100%
+    .content5-wrapper
+      .content-bg1
+        display: block!important
+        &>div
+          width: 100%
+          margin-bottom: 30px
+          box-sizing: border-box
+      .content-bg2
+        display: block!important
+        &>div
+          width: 100%
+          margin-bottom: 30px
+
+.resourceCenter-wrapper
+  width: 100%
+  height: 100%
+  .content1-wrapper
+    width: 100%
+    height: 500px
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #ffffff
+    background: url("../../images/1/resourceCenter/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      height: 100%
+      display: flex
+      align-items: center
+      color: #ffffff
+  .content2-wrapper
+    width: 100%
+    background-color: #ffffff
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    padding-top: 120px
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      .resource-list-wrapper
+        margin-top: 50px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &>ul
+          li
+            font-weight: bold
+            font-size: 16px
+            color: #344e5a
+            margin-bottom: 18px
+            a
+              font-size: 16px
+              color: #27a2db
+              font-weight: normal
+              &:hover
+                color: #066b98
+            &:first-child
+              margin-bottom: 32px
+  .content3-wrapper
+    width: 100%
+    background-color: #ffffff
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    padding-top: 60px
+    padding-bottom: 150px
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      .document-list1
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &>div
+          width: 356px
+          text-align: center
+          img
+            width: 100%
+      .document-list2
+        margin-top: 80px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &>div
+          width: 356px
+          text-align: center
+          img
+            width: 100%
+
+@media screen and (max-width: 1024px)
+  .resourceCenter-wrapper
+    .content3-wrapper
+      .content-bg
+        .document-list1
+          &>div
+            width: 250px!important
+        .document-list2
+          &>div
+            width: 250px!important
+@media screen and (max-width: 768px)
+  .resourceCenter-wrapper
+    .content1-wrapper
+      h1
+        font-size: 50px!important
+      p
+        font-size: 16px!important
+    .content2-wrapper
+      .content-bg
+        .resource-list-wrapper
+          display: block
+          &>ul
+            margin-bottom: 40px
+    .content3-wrapper
+      .content-bg
+        .document-list1
+          display: block
+          &>div
+            width: 100%!important
+            margin-bottom: 30px
+        .document-list2
+          display: block
+          &>div
+            width: 100%!important
+            margin-bottom: 30px
+
+
+.radar-wrapper
+  background-color: black
+  width: 100%
+  height: 100%
+  .content1-wrapper-bg
+    width: 100%
+    height: 1080px
+    background: url("../../images/1/radar/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content1-wrapper
+      width: 100%
+      height: 500px
+      padding-left: 15px
+      padding-right: 15px
+      box-sizing: border-box
+      .content-bg
+        width: 100%
+        max-width: 1200px
+        margin: auto
+        height: 100%
+        display: flex
+        align-items: center
+        color: #ffffff
+  .content2-wrapper
+    width: 100%
+    min-height: 1680px
+    background: url("../../images/1/radar/3.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-top: 40px
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 150px
+    box-sizing: border-box
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      .blue-btn
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      margin-top: 190px
+      opacity: 0
+      .blue-line
+        display: inline-block
+        width: 104px
+        height: 3px
+        background: -webkit-linear-gradient(left, #0ca8e1 , #005f96) /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #0ca8e1, #005f96) /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #0ca8e1, #005f96) /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #0ca8e1 , #005f96) /* 标准的语法 */
+      .content-info-wrapper
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-top: 165px
+        &>div
+          width: 442px
+          img
+            width: 154px
+            margin: auto
+    .content-bg3
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      margin-top: 190px
+      opacity: 0
+      .blue-line
+        display: inline-block
+        width: 104px
+        height: 3px
+        background: -webkit-linear-gradient(left, #0ca8e1 , #005f96) /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #0ca8e1, #005f96) /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #0ca8e1, #005f96) /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #0ca8e1 , #005f96) /* 标准的语法 */
+      .blue-btn
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+    .active-animation
+      opacity: 1
+      animation: feadInUp2 2s both
+
+@media screen and (max-width: 768px)
+  .radar-wrapper
+    .content1-wrapper-bg
+      height: 500px
+      background-position: left
+    .content2-wrapper
+      .content-bg2
+        .content-info-wrapper
+          display: block
+          &>div
+            width: 100%
+            margin-bottom: 40px
+
+.rrayRobot2-wrapper
+  width: 100%
+  height: 100%
+  .content1-wrapper
+    width: 100%
+    height: 740px
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #ffffff
+    background: url("../../images/1/rrayRobot2/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+  .content2-wrapper
+    width: 100%
+    min-height: 1705px
+    background: url("../../images/1/rrayRobot2/BJ.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 150px
+    box-sizing: border-box
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      img
+        width: 520px
+        margin-bottom: 98px
+      h1
+        opacity: 0
+      .quarantine
+        opacity: 0
+        display: inline-block
+        width: 350px
+        height: 2px
+        background-color: #0375ad
+        margin-top: 20px
+        margin-bottom: 50px
+      p
+        opacity: 0
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      display: flex
+      justify-content: space-between
+      padding-top: 285px
+      padding-bottom: 285px
+      box-sizing: border-box
+      &>div
+        width: 284px
+        .quarantine
+          display: inline-block
+          width: 100%
+          height: 2px
+          background-color: #0375ad
+          margin-top: 40px
+          margin-bottom: 30px
+    .content-bg3
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      .quarantine
+        display: inline-block
+        width: 100px
+        height: 2px
+        background-color: #cccccc
+        margin-top: 22px
+        margin-bottom: 64px
+      .blue-btn
+        margin: 54px auto 0
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+    .active-animation
+      opacity: 1
+      animation: feadInUp2 2s both
+
+
+@media screen and (max-width: 768px)
+  .rrayRobot2-wrapper
+    .content1-wrapper
+    .content2-wrapper
+      .content-bg
+        img
+          width: 100%
+          margin-bottom: 98px
+        .quarantine
+          width: 100%
+      .content-bg2
+        display: block
+        &>div
+          width: 100%
+          margin-bottom: 50px
+
+.intelligentTrainer2-wrapper
+  width: 100%
+  height: 100%
+  .content1-wrapper
+    width: 100%
+    height: 740px
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #ffffff
+    background: url("../../images/1/rrayRobot2/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+  .content2-wrapper
+    width: 100%
+    min-height: 1705px
+    background: url("../../images/1/rrayRobot2/BJ.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 150px
+    box-sizing: border-box
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      img
+        width: 520px
+        margin-bottom: 98px
+      h1
+        opacity: 0
+      .quarantine
+        opacity: 0
+        display: inline-block
+        width: 350px
+        height: 2px
+        background-color: #0375ad
+        margin-top: 20px
+        margin-bottom: 50px
+      p
+        opacity: 0
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      display: flex
+      justify-content: space-between
+      padding-top: 285px
+      padding-bottom: 285px
+      box-sizing: border-box
+      &>div
+        width: 284px
+        .quarantine
+          display: inline-block
+          width: 100%
+          height: 2px
+          background-color: #0375ad
+          margin-top: 40px
+          margin-bottom: 30px
+    .content-bg3
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      .quarantine
+        display: inline-block
+        width: 100px
+        height: 2px
+        background-color: #cccccc
+        margin-top: 22px
+        margin-bottom: 64px
+      .blue-btn
+        margin: 54px auto 0
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+    .active-animation
+      opacity: 1
+      animation: feadInUp2 2s both
+
+
+@media screen and (max-width: 768px)
+  .intelligentTrainer2-wrapper
+    .content1-wrapper
+    .content2-wrapper
+      .content-bg
+        img
+          width: 100%
+          margin-bottom: 98px
+        .quarantine
+          width: 100%
+      .content-bg2
+        display: block
+        &>div
+          width: 100%
+          margin-bottom: 50px
+
+.socailWallet2-wrapper
+  width: 100%
+  height: 100%
+  .content1-wrapper
+    width: 100%
+    height: 740px
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    background-color: #ffffff
+    background: url("../../images/1/rrayRobot2/banner.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+      .blue-btn
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        margin: auto
+        &:hover
+          background-color: #43bded
+
+  .content2-wrapper
+    width: 100%
+    min-height: 1705px
+    background: url("../../images/1/rrayRobot2/BJ.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    .content-bg
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      img
+        width: 520px
+        //margin-bottom: 98px
+      h1
+      .quarantine
+        display: inline-block
+        width: 350px
+        height: 2px
+        background-color: #0375ad
+        margin-top: 20px
+        margin-bottom: 50px
+      p
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      padding-top: 285px
+      padding-bottom: 285px
+      box-sizing: border-box
+      opacity: 0
+      h1
+      .quarantine
+        display: inline-block
+        width: 350px
+        height: 2px
+        background-color: #0375ad
+        margin-top: 20px
+        margin-bottom: 124px
+      p
+      .content-info1
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 140px
+        &>div
+          img
+            width: 228px
+            margin-bottom: 30px
+          h1
+            font-size: 21px
+            color: white
+            font-weight: normal
+          .quarantine
+            display: inline-block
+            width: 100px
+            height: 2px
+            background-color: #cccccc
+            margin-top: 24px
+            margin-bottom: 50px
+          p
+            font-size: 17px
+            color: #808080
+      .content-info2
+        width: 100%
+        display: flex
+        justify-content: center
+        &>div
+          img
+            width: 205px
+            margin-bottom: 30px
+          h1
+            font-size: 21px
+            color: white
+            font-weight: normal
+          .quarantine
+            display: inline-block
+            width: 100px
+            height: 2px
+            background-color: #cccccc
+            margin-top: 24px
+            margin-bottom: 50px
+          p
+            font-size: 17px
+            color: #808080
+    .active-animation
+      opacity: 1
+      animation: feadInUp2 2s both
+  .content3-wrapper
+    width: 100%
+    background-color: #222222
+    padding-left: 15px
+    padding-right: 15px
+    box-sizing: border-box
+    padding-bottom: 72px
+    .content-bg1
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      display: flex
+      justify-content: space-between
+      opacity: 0
+      &>div
+        width: 500px
+        &:first-child
+          //padding-right: 110px
+          //box-sizing: border-box
+          text-align: left
+          h1
+            font-size: 36px
+            color: #ffffff
+            font-weight: normal
+          .quarantine
+            display: inline-block
+            width: 350px
+            height: 2px
+            background-color: #0375ad
+            margin-top: 20px
+            margin-bottom: 72px
+          &>div
+            h2
+              font-weight: normal
+              font-size: 21px
+              color: white
+            p
+              font-size: 14px
+              color: #27a1da
+              margin-top: 18px
+              margin-bottom: 80px
+            a
+              display: inline-block
+              width: 260px
+              height: 42px
+              line-height: 42px
+              border: 1px solid #ffffff
+              color: white
+              background-color: #7a7a7a
+              text-align: center
+            &:first-child
+            margin-bottom: 88px
+    .content-bg2
+      width: 100%
+      max-width: 1200px
+      margin: auto
+      text-align: center
+      opacity: 0
+      .quarantine
+        display: inline-block
+        width: 100px
+        height: 2px
+        background-color: #cccccc
+        margin-top: 22px
+        margin-bottom: 64px
+      .blue-btn
+        margin: 54px auto 0
+        font-size: 14px
+        width: 160px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        background-color: #27a2db
+        &:hover
+          background-color: #43bded
+    .active-animation
+      opacity: 1
+      animation: feadInUp2 2s both
+
+@media screen and (max-width: 768px)
+  .socailWallet2-wrapper
+    .content1-wrapper
+    .content2-wrapper
+      .content-bg
+        img
+          width: 100%
+          //margin-bottom: 98px
+        .quarantine
+          width: 100%
+      .content-bg2
+        .content-info1
+          display: block
+          margin-bottom: 0
+          &>div
+            width: 100%
+            margin-bottom: 50px
+    .content3-wrapper
+      .content-bg1
+        display: block
+        margin-bottom: 100px
+        &>div
+          width: 100%
+          &:first-child
+            text-align: center
+
+
+
+
+
+
+

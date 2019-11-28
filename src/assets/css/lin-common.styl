@@ -1,0 +1,177 @@
+.lin-wrap
+  width 1200px
+  margin 0 auto
+  box-sizing border-box
+  @media only screen and (max-width 1199px)
+    width 100%
+    padding 0 15px
+//    人工智能和产业链公共样式
+.lin-header   //  公共头部
+  display flex
+  align-items center
+  height 500px
+  box-sizing border-box
+  background-image url("../../assets/images/lin-img/bg_1.jpg")
+  background-size cover
+  background-position center
+  color #ffffff
+  h3
+    font-size 64px
+    font-weight normal
+    margin-bottom 20px
+    line-height 1
+    @media only screen and (max-width 767px)
+      font-size 48px
+    @media only screen and (max-width 413px)
+      font-size 45px
+  p
+    font-size 20px
+    line-height 1.5
+    @media only screen and (max-width 768px)
+      font-size 16px
+.lin-content
+  padding-top 150px
+.lin-content-list-title   ///   公共标题带有下划线
+  font-size 36px
+  font-weight normal
+  color #066b98
+  text-align center
+  margin-bottom 70px
+  position relative
+  &:after
+    content: ''
+    width 100px
+    height 1px
+    background-color #cccccc
+    position absolute
+    bottom -28px
+    left 50%
+    margin-left -50px
+.lin-content-list
+  .lin-content-list-subtitle
+    width 870px
+    margin 0 auto
+    font-size 16px
+    color #808080
+    line-height 24px
+    text-align center
+    margin-bottom 115px
+    box-sizing border-box
+    @media only screen and (max-width 1199px)
+      width 100%!important
+      padding 0 10px
+  .ul-one
+    padding-bottom 5px
+    overflow hidden
+    li
+      float left
+      width 33.33%
+      padding 0 15px
+      box-sizing border-box
+      text-align center
+      margin-bottom 175px
+      @media only screen and (max-width 767px)
+        width 100%
+      @media only screen and (min-width: 768px) and (max-width: 1199px)
+        width 50%
+      @media only screen and (max-width 1199px)
+        margin-bottom 70px
+        &:last-child
+          margin-bottom 175px
+      h3
+        font-size 16px
+        font-weight bold
+        color #344e5a
+        margin-bottom 40px
+      div
+        padding-top 60px
+        padding-left 40px
+        padding-right 40px
+        min-height 450px
+        box-sizing border-box
+        box-shadow 0px 2px 6px #c2c2c2
+        @media only screen and (max-width 413px)
+          padding-left 20px
+          padding-right 20px
+        &.minHeight480
+          min-height 480px
+        img
+          display inline-block
+          max-width 100%
+          height auto
+          margin-bottom 38px
+        h4
+          font-size 16px
+          font-weight normal
+          color #344e5a
+          margin-bottom 25px
+        p
+          font-size 16px
+          color #808080
+          line-height 24px
+          text-align left
+  .ul-two
+    padding-top 90px
+    overflow hidden
+    li
+      float left
+      width 25%
+      text-align center
+      @media only screen and (max-width 1199px)
+        width 50%
+        min-height: 280px;
+        &:first-child
+          margin-bottom 50px
+        &:nth-child(2)
+          margin-bottom 50px
+      h3
+        font-size 16px
+        font-weight normal
+        color #344e5a
+        margin-bottom 25px
+      img
+        display inline-block
+        max-width 100%
+        height auto
+        margin-bottom 38px
+      p
+        font-size 16px
+        color #808080
+        @media only screen and (max-width 767px)
+          padding 0 15px
+.lin-contactUs-box
+  height 462px
+  padding-top 125px
+  margin-top 198px
+  box-sizing border-box
+  background-color #f4f6f7
+  border-top 1px solid #27a2d4
+  .lin-content-list
+    margin-bottom 0
+    text-align center
+    .lin-contactUs-subtitle
+      font-size 16px
+      color #808080
+      padding-top 15px
+      @media only screen and (max-width 1199px)
+        padding 0 15px
+    .lin-btn
+      margin-top 56px
+.lin-btn   //  公共按钮
+  display inline-block
+  width 180px
+  height 44px
+  text-align center
+  line-height 43px
+  color #ffffff
+  font-size 14px
+  border-radius 4px
+  background-color #27a2db
+  cursor pointer
+  outline none
+  border none
+  user-select none
+  margin-top 35px
+  &:hover
+    background-color: #43bded
+//    人工智能和产业链公共样式结束
